@@ -23,13 +23,7 @@ const MENU = [
 ];
 
 const MEMBERS = [
-  {
-    avatar: HomeTeamsPic1,
-    name: "Đặng Hữu Thắng",
-    position: "Bí thư chi đoàn",
-    university: "Trường Đại học Công nghệ Thông tin - ĐHQG HCM",
-    major: "Ngành Kỹ thuật phần mềm",
-  },
+  
   {
     avatar: HomeTeamsPic3,
     name: "Nguyễn Ngọc Mỹ Tâm",
@@ -37,6 +31,13 @@ const MEMBERS = [
     university: "Trường Đại học Khoa học Xã hội và Nhân văn - ĐHQG HCM",
     major: "Ngành Địa lý học",
     fix: "object-[center_30%]",
+  },
+  {
+    avatar: HomeTeamsPic1,
+    name: "Đặng Hữu Thắng",
+    position: "Bí thư chi đoàn",
+    university: "Trường Đại học Công nghệ Thông tin - ĐHQG HCM",
+    major: "Ngành Kỹ thuật phần mềm",
   },
   {
     avatar: HomeTeamsPic2,
