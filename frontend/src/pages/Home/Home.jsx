@@ -35,7 +35,7 @@ const MEMBERS = [
     name: "Nguyễn Ngọc Mỹ Tâm",
     position: "Phó Bí thư chi đoàn",
     university: "Trường Đại học Khoa học Xã hội và Nhân văn - ĐHQG HCM",
-    major: "Ngành Địa chất học",
+    major: "Ngành Địa lý học",
     fix: "object-[center_30%]",
   },
   {
