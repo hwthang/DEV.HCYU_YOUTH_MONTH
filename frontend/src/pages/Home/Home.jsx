@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   FacebookLogo,
   HcyuLogo,
+  HomeActivitiesBg,
   HomeActivitiesPic1,
   HomeActivitiesPic2,
   HomeActivitiesPic3,
@@ -447,7 +448,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
         </div>
         <div
           id="activities-section"
-          className="min-h-screen h-fit flex flex-col items-center justify-center bg-blue-950 py-30"
+          className="min-h-screen h-fit flex flex-col items-center justify-center bg-cyan-900 py-30"
         >
           <div className="flex flex-col h-full w-full">
             <div className="h-72 flex-shrink-0 overflow-hidden relative z-0">
@@ -474,7 +475,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 ))}
               </div>
             </div>
-            <div className="h-40 justify-center flex items-center">
+            <div className="h-40 justify-center flex items-center flex-col">
               <div className="uppercase text-3xl md:text-4xl md:text-6xl font-bold bg-linear-to-r bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-400 bg-clip-text text-transparent py-8 font-bungee">
                 Hành trình tuổi trẻ
               </div>
@@ -505,10 +506,86 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
             </div>
           </div>
         </div>
+        <div className="min-h-fit h-screen relative">
+          <div className="absolute top-0 -z-10 h-full w-full">
+            <img
+              src={HomeActivitiesBg}
+              className="h-full w-full object-cover "
+            />
+          </div>
+          <div className="md:grid flex flex-col grid-cols-4 auto-rows-[300px] h-full w-full gap-8 pt-24 pb-12 px-16">
+            <div className="w-full col-span-2 flex flex-col md:flex-row p-8 gap-6 items-center bg-cyan-800/50 text-white">
+              <div className="h-full w-full overflow-hidden rounded-lg">
+                <img
+                  src={HomeActivitiesPic2}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2">
+                <div className="uppercase font-extrabold text-center md:text-left text-nowrap">
+                  Hỗ trợ người dân chuyển đổi số
+                </div>
+                <div className="text-justify text-sm">
+                  Đoàn viên, thanh niên hướng dẫn người dân sử dụng các nền tảng
+                  số như Công dân số TP.HCM, VNeID và thanh toán không tiền mặt.
+                  Hoạt động góp phần nâng cao nhận thức cộng đồng và lan tỏa vai
+                  trò xung kích của tuổi trẻ trong chuyển đổi số.
+                </div>
+              </div>
+            </div>
+            <div className="h-full w-full col-span-2 row-span-2 flex flex-col gap-8 p-8 bg-cyan-800/50 text-white">
+              <div className="h-full w-full overflow-hidden rounded-lg">
+                <img
+                  src={HomeActivitiesPic3}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2 min-h-fit h-1/3">
+                <div className="uppercase font-extrabold text-center md:text-lefttext-nowrap md:text-xl">
+                  Bước chân thiện nguyện <br className="md:hidden" />– Lan tỏa
+                  yêu thương
+                </div>
+                <div className="text-justify text-sm md:text-base">
+                  Chi đoàn khu phố Đông B tổ chức thăm hỏi và trao quà cho thiếu
+                  nhi có hoàn cảnh khó khăn, tiếp thêm động lực để các em vươn
+                  lên trong cuộc sống. Hoạt động thể hiện tinh thần trách nhiệm,
+                  sự sẻ chia của tuổi trẻ, góp phần lan tỏa những giá trị nhân
+                  văn trong cộng đồng.
+                </div>
+              </div>
+            </div>
+            <div className="h-full w-full flex flex-col gap-4 p-8 bg-cyan-800/50 text-white">
+              <div className="h-full w-full overflow-hidden rounded-lg">
+                <img
+                  src={HomeActivitiesPic4}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2">
+                <div className="font-extrabold text-center text-nowrap">
+                  THỨ 7 VĂN MINH ĐÔ THỊ
+                </div>
+              </div>
+            </div>
 
+            <div className=" h-full w-full flex flex-col gap-8 p-8 bg-cyan-800/50 text-white">
+              <div className="h-full w-full overflow-hidden rounded-lg">
+                <img
+                  src={HomeActivitiesPic7}
+                  className="h-full w-full object-cover scale-150"
+                />
+              </div>
+              <div className="w-full flex flex-col gap-2">
+                <div className="font-extrabold text-center text-nowrap">
+                  TẾT SUM VẦY, XUÂN LAN TỎA
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           id="contact-section"
-          className="min-h-screen h-screen flex flex-col md:flex-row items-center justify-center border relative z-0 px-16 gap-16"
+          className="min-h-screen h-screen flex flex-col md:flex-row items-center justify-center relative z-0 px-16 gap-16"
         >
           <div className="absolute top-0 -z-10 h-full w-full">
             <img src={HomeContactPic3} className="h-full w-full object-cover" />

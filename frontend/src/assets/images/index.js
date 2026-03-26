@@ -18,6 +18,7 @@ import HomeActivitiesPic5 from "./home-activities-pic5.jpg";
 import HomeActivitiesPic6 from "./home-activities-pic6.jpg";
 import HomeActivitiesPic7 from "./home-activities-pic7.jpg";
 import HomeActivitiesPic8 from "./home-activities-pic8.jpg";
+import HomeActivitiesBg from "./home-activities-bg.svg";
 
 import HomeIntroPic2 from "./home-intro-pic2.png";
 import HomeIntroPic3 from "./home-intro-pic3.png";
@@ -27,6 +28,7 @@ import HomeIntroPic5 from "./home-intro-pic5.png";
 import HomeTeamPic4 from "./home-team-pic4.png";
 
 export {
+  HomeActivitiesBg,
   HomeActivitiesPic8,
   HomeActivitiesPic7,
   HomeActivitiesPic6,
