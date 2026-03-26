@@ -3,3 +3,43 @@
 html{
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: "Gajra";
+  src: url("./assets/fonts/GajrajOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont.ttf");
+}
+@font-face {
+  font-family: "Bungee";
+  src: url("./assets/fonts/Bungee-Regular.ttf");
+}
+@font-face {
+  font-family: "Gluten";
+  src: url("./assets/fonts/Gluten-VariableFont.ttf");
+}
+@font-face {
+  font-family: "PlaywriteUSModern";
+  src: url("./assets/fonts/PlaywriteUSModern-VariableFont.ttf");
+}
+body{
+  font-family: "Montserrat", "san-serif";
+}
+
+.font-gajra {
+  font-family: "Gajra", sans-serif;
+}
+
+.font-bungee {
+  font-family: "Bungee", sans-serif;
+}
+
+.font-gluten {
+  font-family: "Gluten", sans-serif;
+}
+
+.font-playwrite{
+  font-family: "PlaywriteUSModern", sans-serif;
+}
