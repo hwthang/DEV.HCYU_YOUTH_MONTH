@@ -41,7 +41,11 @@ const MEMBERS = [
     avatar: HomeTeamsPic3,
     name: "Nguyễn Ngọc Mỹ Tâm",
     position: "Phó Bí thư chi đoàn",
-    university: "Trường Đại học Khoa học Xã hội và Nhân văn",
+    university: (
+      <>
+        Trường Đại học <br /> Khoa học Xã hội và Nhân văn
+      </>
+    ),
     major: "Ngành Địa lý học",
     fix: "object-[center_30%]",
   },
@@ -213,13 +217,13 @@ const Home = () => {
             <div className="h-full w-full flex items-center justify-start p-2 gap-2">
               <img src={LogoDongB} className="h-full object-contain" />
               <div className="flex flex-col items-center justify-center md:items-start trasition-all duration-800">
-                <div className="text-xs text-nowrap font-semibold text-blue-900">
+                <div className="text-[9px] md:text-xs text-nowrap font-semibold text-blue-900">
                   Đoàn TNCS Hồ Chí Minh
                 </div>
                 <div className="text-nowrap font-extrabold text-xl text-blue-600 uppercase">
                   Khu phố Đông B
                 </div>
-                <div className="text-xs text-nowrap font-semibold text-blue-900">
+                <div className=" text-[9px] md:text-xs text-nowrap font-semibold text-blue-900">
                   Đoàn kết - Xung kích - Tình nguyện - Sáng tạo
                 </div>
               </div>
@@ -295,7 +299,7 @@ const Home = () => {
             <div className="lg:text-3xl text-xl font-extrabold tracking-wide text-blue-800">
               Công trình thanh niên
             </div>
-            <div className="lg:text-6xl text-2xl font-bold uppercase bg-linear-to-r bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-400 bg-clip-text text-transparent py-1 md:leading-18 font-extrabold">
+            <div className="lg:text-6xl text-2xl font-bold uppercase bg-linear-to-r bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-400 bg-clip-text text-transparent py-1 md:leading-18 font-extrabold text-nowrap">
               Nền tảng truyền thông <br /> Chi đoàn khu phố Đông B
             </div>
             <div className="md:text-xl text-sm text-blue-800 font-semibold">
@@ -325,7 +329,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
             <img src={HomeIntroPic1} className="h-full w-full object-cover" />
           </div>
           <div className="flex-2 flex flex-col gap-4 bg-white/60 px-8 pb-8 backdrop-blur-sm rounded-xl">
-            <div className="text-3xl md:text-4xl font-extrabold bg-linear-to-r bg-gradient-to-r from-indigo-700 to-blue-500 bg-clip-text text-transparent text-center md:text-left font-playwrite pt-8">
+            <div className="text-2xl md:text-4xl font-extrabold bg-linear-to-r bg-gradient-to-r from-indigo-700 to-blue-500 bg-clip-text text-transparent text-center md:text-left font-playwrite pt-8">
               Kết nối thanh niên
             </div>
             <div className="text-justify">
@@ -391,7 +395,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
           <div className="absolute top-0 h-full w-full">
             <img src={HomeContactPic1} className="h-full w-full object-cover" />
           </div>
-          <div className="text-4xl lg:text-5xl relative z-20 font-extrabold bg-linear-to-r bg-gradient-to-r from-indigo-700 to-blue-500 bg-clip-text text-transparent py-3 font-bungee text-center leading-16">
+          <div className="text-3xl lg:text-5xl relative z-20 font-extrabold bg-linear-to-r bg-gradient-to-r from-indigo-700 to-blue-500 bg-clip-text text-transparent py-3 font-bungee text-center leading-16">
             Ban chấp hành <br className="md:hidden" /> nhiệm kỳ 2025-2026
           </div>
           <div className="flex md:mt-8 flex-col md:flex-row h-full w-full gap-12 items-center justify-center px-12 md:px-16">
@@ -451,7 +455,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 className="absolute top-0 left-0 flex flex-row h-full gap-8 w-max pb-1"
                 ref={containerRefLeft}
               >
-                {[...ACTIVITIES,...ACTIVITIES].map((item) => (
+                {[...ACTIVITIES, ...ACTIVITIES].map((item) => (
                   <div className="h-full aspect-[4/3] flex flex-col relative z-0 group">
                     <div className="h-full w-full">
                       <img
@@ -462,7 +466,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                     <div
                       className="absolute bottom-0 z-20 w-full 
   bg-gradient-to-t from-black/60 to-transparent 
-  text-white flex items-end group-hover:min-h-32 group-hover:p-3 min-h-0 h-0 overflow-hidden transition-all duration-500 rounded-b-lg"
+  text-white flex items-end md:group-hover:min-h-32 md:group-hover:p-3 p-3 md:p-0 min-h-0 h-32 md:h-0 overflow-hidden transition-all duration-500 rounded-b-lg"
                     >
                       {item.content}
                     </div>
@@ -471,7 +475,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
               </div>
             </div>
             <div className="h-40 justify-center flex items-center">
-              <div className="uppercase text-4xl md:text-6xl font-bold bg-linear-to-r bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-400 bg-clip-text text-transparent py-8 font-bungee">
+              <div className="uppercase text-3xl md:text-4xl md:text-6xl font-bold bg-linear-to-r bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-400 bg-clip-text text-transparent py-8 font-bungee">
                 Hành trình tuổi trẻ
               </div>
             </div>
@@ -480,7 +484,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 className="absolute top-0 left-0 flex flex-row h-full gap-8 w-max pb-1"
                 ref={containerRefRight}
               >
-                {[...ACTIVITIES,...ACTIVITIES].map((item) => (
+                {[...ACTIVITIES, ...ACTIVITIES].map((item) => (
                   <div className="h-full aspect-[4/3] flex flex-col relative z-0 group">
                     <div className="h-full w-full">
                       <img
@@ -491,7 +495,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                     <div
                       className="absolute bottom-0 z-20 w-full 
   bg-gradient-to-t from-black/60 to-transparent 
-  text-white flex items-end group-hover:min-h-32 group-hover:p-3 min-h-0 h-0 overflow-hidden transition-all duration-500 rounded-b-lg"
+  text-white flex items-end md:group-hover:min-h-32 md:group-hover:p-3 p-3 md:p-0 min-h-0 h-32 md:h-0 overflow-hidden transition-all duration-500 rounded-b-lg"
                     >
                       {item.content}
                     </div>
@@ -511,16 +515,19 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
           </div>
           <div className="absolute top-0 -z-10 h-full w-full bg-black/50 backdrop-blur-sm"></div>
           <div className="w-full overflow-hidden rounded-lg shadow-white shadow-xl">
-            <img src={HomeContactPic2} className="rounded-lg shadow-lg h-full w-full scale-150" />
+            <img
+              src={HomeContactPic2}
+              className="rounded-lg shadow-lg h-full w-full scale-150"
+            />
           </div>
           <a
             href="https://www.facebook.com/profile.php?id=100093262587854"
             target="blank"
             className="w-full flex flex-row gap-4 items-center border justify-center bg-white py-4 rounded-lg"
           >
-            <img src={FacebookLogo} className="h-16 w-16" />
+            <img src={FacebookLogo} className="h-12 w-12" />
             <div>
-              <span className="text-2xl md:text-4xl font-bold  bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500 bg-clip-text text-transparent">
+              <span className="text-xl md:text-4xl font-bold  bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500 bg-clip-text text-transparent">
                 Tuổi trẻ Đông B
               </span>
             </div>
