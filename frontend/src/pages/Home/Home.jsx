@@ -255,14 +255,14 @@ const Home = () => {
           </div>
           <div
             className={`${
-              openMenu ? "max-h-60" : "max-h-0"
-            } overflow-hidden transition-all duration-500 lg:hidden flex flex-col gap-2 bg-white/90 backdrop-blur-sm`}
+              openMenu ? "max-h-120" : "max-h-0"
+            } overflow-hidden transition-all duration-500 lg:hidden flex flex-col gap-2 bg-white backdrop-blur-sm shadow-lg`}
           >
             {MENU.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleScrollToId(item.id)}
-                className="text-left px-4 py-2 hover:bg-gray-100 transition"
+                className="text-left px-4 py-3 hover:bg-gray-100 transition font-semibold text-blue-800"
               >
                 {item.label}
               </button>
@@ -273,7 +273,7 @@ const Home = () => {
       <div className="flex flex-col relative z-10">
         <div
           id="hero-section"
-          className="relative z-0 lg:h-screen h-screen lg:pt-24 pt-40 pb-16 lg:pb-0"
+          className="relative z-0 min-h-fit h-screen pt-24 pb-16"
         >
           <div
             className={`absolute top-0 w-full z-10 transition-all duration-[3000ms] ${
@@ -391,7 +391,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
         </div>
         <div
           id="teams-section"
-          className="min-h-screen md:h-screen h-fit pt-30 pb-24 flex flex-col items-center justify-center gap-8 md:gap-0 relative"
+          className="min-h-fit h-screen pt-30 pb-24 flex flex-col items-center justify-center gap-8 md:gap-0 relative"
         >
           <div className="absolute top-0 h-full w-full">
             <img src={HomeContactPic1} className="h-full w-full object-cover" />
@@ -448,7 +448,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
         </div>
         <div
           id="activities-section"
-          className="min-h-screen h-fit flex flex-col items-center justify-center bg-cyan-900 py-30"
+          className="min-h-fit h-screen flex flex-col items-center justify-center bg-cyan-900 py-30"
         >
           <div className="flex flex-col h-full w-full">
             <div className="h-72 flex-shrink-0 overflow-hidden relative z-0">
@@ -513,7 +513,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
               className="h-full w-full object-cover "
             />
           </div>
-          <div className="md:grid flex flex-col grid-cols-4 auto-rows-[300px] h-full w-full gap-8 pt-24 pb-12 px-16">
+          <div className="md:grid flex flex-col grid-cols-4 auto-rows-[300px] h-full w-full gap-8 pt-24 pb-12 md:px-16">
             <div className="w-full col-span-2 flex flex-col md:flex-row p-8 gap-6 items-center bg-cyan-800/50 text-white">
               <div className="h-full w-full overflow-hidden rounded-lg">
                 <img
@@ -522,7 +522,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 />
               </div>
               <div className="w-full flex flex-col gap-2">
-                <div className="uppercase font-extrabold text-center md:text-left text-nowrap">
+                <div className="uppercase font-extrabold text-center md:text-left">
                   Hỗ trợ người dân chuyển đổi số
                 </div>
                 <div className="text-justify text-sm">
@@ -541,9 +541,8 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 />
               </div>
               <div className="w-full flex flex-col gap-2 min-h-fit h-1/3">
-                <div className="uppercase font-extrabold text-center md:text-lefttext-nowrap md:text-xl">
-                  Bước chân thiện nguyện <br className="md:hidden" />– Lan tỏa
-                  yêu thương
+                <div className="uppercase font-extrabold text-center md:text-xl t">
+                  Bước chân thiện nguyện – Lan tỏa yêu thương
                 </div>
                 <div className="text-justify text-sm md:text-base">
                   Chi đoàn khu phố Đông B tổ chức thăm hỏi và trao quà cho thiếu
@@ -562,7 +561,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 />
               </div>
               <div className="w-full flex flex-col gap-2">
-                <div className="font-extrabold text-center text-nowrap">
+                <div className="font-extrabold text-center">
                   THỨ 7 VĂN MINH ĐÔ THỊ
                 </div>
               </div>
@@ -576,7 +575,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 />
               </div>
               <div className="w-full flex flex-col gap-2">
-                <div className="font-extrabold text-center text-nowrap">
+                <div className="font-extrabold text-center">
                   TẾT SUM VẦY, XUÂN LAN TỎA
                 </div>
               </div>
