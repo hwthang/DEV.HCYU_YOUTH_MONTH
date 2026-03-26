@@ -399,7 +399,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
           <div className="text-3xl lg:text-5xl relative z-20 font-extrabold bg-linear-to-r bg-gradient-to-r from-indigo-700 to-blue-500 bg-clip-text text-transparent py-3 font-bungee text-center leading-16">
             Ban chấp hành <br className="md:hidden" /> nhiệm kỳ 2025-2026
           </div>
-          <div className="flex md:mt-8 flex-col md:flex-row h-full w-full gap-12 items-center justify-center px-12 md:px-16">
+          <div className="flex md:mt-8 flex-col lg:flex-row h-full w-full gap-12 items-center justify-center px-12 md:px-16">
             {MEMBERS.map((item) => (
               <div
                 className={`w-full flex h-120 relative z-0 overflow-hidden hover:scale-108 ${item?.highlight ? "scale-110" : "scale-100"} transition-all duration-[800ms] rounded-xl group`}
@@ -414,13 +414,13 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
 
                 <div
                   className="relative z-10 flex flex-col text-white items-center 
-  pt-12 md:py-12 md:hover:pt-24 
+  pt-12 md:py-12 lg:hover:pt-24 
   gap-6 w-full group transition-all duration-[800ms]"
                 >
                   <div
                     className="h-48 w-48 rounded-full 
-  translate-y-0 md:translate-y-1/2 
-  md:group-hover:translate-y-0 
+  translate-y-0 lg:translate-y-1/2 
+  lg:group-hover:translate-y-0 
   transition-all duration-[800ms]"
                   >
                     <img
@@ -430,8 +430,8 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                   </div>
                   <div
                     className="items-center justify-center text-center flex flex-col 
-  opacity-100 md:opacity-0 
-  md:group-hover:opacity-100 
+  opacity-100 lg:opacity-0 
+  lg:group-hover:opacity-100 
   transition-all duration-[800ms] gap-2"
                   >
                     <div className="text-xl font-semibold">{item.name}</div>
@@ -513,7 +513,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
               className="h-full w-full object-cover "
             />
           </div>
-          <div className="md:grid flex flex-col grid-cols-4 auto-rows-[300px] h-full w-full gap-8 pt-24 pb-12 md:px-16">
+          <div className="lg:grid flex flex-col grid-cols-4 auto-rows-[300px] h-full w-full gap-8 pt-24 pb-12 md:px-16">
             <div className="w-full col-span-2 flex flex-col md:flex-row p-8 gap-6 items-center bg-cyan-800/50 text-white">
               <div className="h-full w-full overflow-hidden rounded-lg">
                 <img
@@ -522,7 +522,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 />
               </div>
               <div className="w-full flex flex-col gap-2">
-                <div className="uppercase font-extrabold text-center md:text-left">
+                <div className="uppercase font-extrabold text-center md:text-left md:text-nowrap">
                   Hỗ trợ người dân chuyển đổi số
                 </div>
                 <div className="text-justify text-sm">
@@ -542,7 +542,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
               </div>
               <div className="w-full flex flex-col gap-2 min-h-fit h-1/3">
                 <div className="uppercase font-extrabold text-center md:text-xl t">
-                  Bước chân thiện nguyện – Lan tỏa yêu thương
+                  Bước chân thiện nguyện <br className="lg:hidden"/> <span className="hidden lg:inline">-</span> Lan tỏa yêu thương
                 </div>
                 <div className="text-justify text-sm md:text-base">
                   Chi đoàn khu phố Đông B tổ chức thăm hỏi và trao quà cho thiếu
@@ -561,7 +561,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 />
               </div>
               <div className="w-full flex flex-col gap-2">
-                <div className="font-extrabold text-center">
+                <div className="font-extrabold text-center text-[14px]">
                   THỨ 7 VĂN MINH ĐÔ THỊ
                 </div>
               </div>
@@ -575,7 +575,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
                 />
               </div>
               <div className="w-full flex flex-col gap-2">
-                <div className="font-extrabold text-center">
+                <div className="font-extrabold text-center text-[14px]">
                   TẾT SUM VẦY, XUÂN LAN TỎA
                 </div>
               </div>
@@ -584,7 +584,7 @@ text-white transition-all duration-300 from-blue-500 via-sky-500 to-cyan-400 mt-
         </div>
         <div
           id="contact-section"
-          className="min-h-screen h-screen flex flex-col md:flex-row items-center justify-center relative z-0 px-16 gap-16"
+          className="min-h-screen h-screen flex flex-col lg:flex-row items-center justify-center relative z-0 px-16 gap-16"
         >
           <div className="absolute top-0 -z-10 h-full w-full">
             <img src={HomeContactPic3} className="h-full w-full object-cover" />
